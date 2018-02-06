@@ -2,10 +2,11 @@
  * 
  */
 /**
- * @author skj
+ * @author lijiahui
  *
  */
 package com.ningmeng.model;
+//model包，对User类进行封装数据
 
 public class User {
 
@@ -13,9 +14,8 @@ public class User {
     private String username;
     private String password;
     
-    
     public User() {
-        super();
+        super();//super()从子类中调用父类的构造方法，this()在同一类内调用其它方法
     }
     public User(String username, String password) {
         super();
