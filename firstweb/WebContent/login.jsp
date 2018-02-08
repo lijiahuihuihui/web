@@ -15,7 +15,6 @@
 		<table>
 			<tr>
 				<th colspan="2">登录界面</th>
-				<%-- colspan为合并列数 ，rowspan为合并行数，th是表头，tr是行，td是列  --%>
 			</tr>
 			<tr>
 				<td>账号</td>

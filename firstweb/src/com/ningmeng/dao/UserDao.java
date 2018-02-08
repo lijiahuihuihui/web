@@ -21,13 +21,13 @@ public class UserDao {
     	User resultUser=null;
         String sql="select * from user where username=? and password=?";////sql语句，搜索这个username和password在数据库是否存在
         PreparedStatement ps=con.prepareStatement(sql);//PreparedStatement是预编译的,把SQL提交到数据库中进行预处理
-        ps.setString(1, user.getUsername());//sql里的第一个替换符替换成username
-        ps.setString(2, user.getPassword());//sql里的第二个替换符替换成password
+        ps.setString(1, user.getUsername());
+        ps.setString(2, user.getPassword());
         ResultSet rs=ps.executeQuery();
         if(rs.next()){  //判断这个结果是否存在
             resultUser=new User();
-            resultUser.setUsername(rs.getString("username"));//返回username
-            resultUser.setPassword(rs.getString("password"));//返回password
+            resultUser.setUsername(rs.getString("username"));
+            resultUser.setPassword(rs.getString("password"));
         }
         return resultUser;
     }
